@@ -1,0 +1,16 @@
+#name: 'userop-web'
+#port: 8081
+#user_srv:
+#  host: '127.0.0.1'
+#  port: '50051'
+#  name: 'user-srv'
+
+
+host: '127.0.0.1'
+port: 8848
+namespace: '4ddceb75-542b-4301-8a18-0af6b39f2a81'
+user: 'nacos'
+password: 'nacos'
+data_id: 'userop-web.json'
+group: 'dev'
+

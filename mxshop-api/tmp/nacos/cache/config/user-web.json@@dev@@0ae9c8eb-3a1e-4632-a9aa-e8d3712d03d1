@@ -1,0 +1,27 @@
+{
+  "name": "user-web",
+  "host": "127.0.0.1",
+  "tags" : ["hb", "sensetime","user","fighting"],
+  "port": 8081,
+  "user_srv": {
+    "host": "127.0.0.1",
+    "port": "50050",
+    "name": "user-srv"
+  },
+  "jwt": {
+    "key": "IMGq40%fQmUbBFL@"
+  },
+  "sms": {
+    "key": "*",
+    "secret": "*"
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379,
+    "expire": 300
+  },
+  "consul": {
+    "host": "127.0.0.1",
+    "port": 8500
+  }
+}

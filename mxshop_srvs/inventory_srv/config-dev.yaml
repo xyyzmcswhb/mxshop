@@ -1,0 +1,16 @@
+#name: 'user-web'
+#port: 8081
+#inventory_srv:
+#  host: '127.0.0.1'
+#  port: '50051'
+#  name: 'user-srv'
+
+
+host: '127.0.0.1'
+port: 8848
+namespace: 'f8617ef7-215d-4391-ad9d-e6f9e4f11dc8'
+user: 'nacos'
+password: 'nacos'
+data_id: 'inventory.json'
+group: 'dev'
+

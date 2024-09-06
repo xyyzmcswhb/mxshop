@@ -1,0 +1,24 @@
+{
+  "name": "userop-web",
+  "host": "127.0.0.1",
+  "tags" : ["hb", "userop","fighting"],
+  "port": 8090,
+  "userop_srv": {
+    "name": "userop-srv"
+  },
+  "goods_srv": {
+    "name": "goods-srv"
+  },
+  "jwt": {
+    "key": "IMGq40%fQmUbBFL@"
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379,
+    "expire": 300
+  },
+  "consul": {
+    "host": "127.0.0.1",
+    "port": 8500
+  }
+}

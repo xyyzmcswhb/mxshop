@@ -1,0 +1,15 @@
+#name: 'user-web'
+#port: 8081
+#goods_srv:
+#  host: '127.0.0.1'
+#  port: '50051'
+#  name: 'user-srv'
+
+
+host: '127.0.0.1'
+port: 8848
+namespace: 'ae3e1255-4090-4861-9388-ae983a53f815'
+user: 'nacos'
+password: 'nacos'
+data_id: 'goods-srv.json'
+group: 'dev'

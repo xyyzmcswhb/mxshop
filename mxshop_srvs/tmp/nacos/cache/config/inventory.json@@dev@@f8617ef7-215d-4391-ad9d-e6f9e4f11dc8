@@ -1,0 +1,22 @@
+{
+  "name": "inventory-srv",
+  "host": "127.0.0.1",
+  "port": 50053,
+  "tags": ["hb", "mxshop", "inventory"],
+  "mysql": {
+    "host": "127.0.0.1",
+    "port": 3306,
+    "user": "root",
+    "password": "94144325hb",
+    "db": "mxshop_inventory_srv"
+  },
+  "redis": {
+    "host": "127.0.0.1",
+    "port": 6379,
+    "expire": 300
+  },
+  "consul": {
+    "host": "127.0.0.1",
+    "port": 8500
+  }
+}

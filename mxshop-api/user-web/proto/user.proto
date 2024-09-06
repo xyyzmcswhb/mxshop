@@ -1,0 +1,65 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+option go_package = "./;proto";
+
+service User{
+  //后台管理,获取用户列表接口
+  rpc GetUserList(PageInfo) returns (UserListResponse);//返回用户列表，需传递分页信息
+  rpc GetUserByMobile(MobileRequest) returns (UserInfoResponse);//通过mobile查询用户
+  rpc GetUserById(IdRequest) returns (UserInfoResponse);//通id查询用户
+  rpc CreateUser(CreateUserInfo) returns (UserInfoResponse);//添加用户
+  rpc UpdateUser(UpdateUserInfo) returns (google.protobuf.Empty);//更新用户
+  rpc CheckUserPassword(PasswordCheck) returns (CheckResponse);//检查用户密码
+}
+message CheckResponse{
+  bool success = 1;
+  //  string reason = 2;
+}
+
+message PasswordCheck{
+  string password = 1;
+  string encryptedpassword = 2;
+}
+
+message CreateUserInfo{
+  string nickname = 1;
+  string password = 2;
+  string Mobile = 3;
+}
+
+message UpdateUserInfo{
+  int32 Id = 1;
+  string nickname = 2;
+  string gender = 3;
+  uint64 birthday = 4;
+}
+
+
+message PageInfo{
+  uint32 pn = 1;
+  uint32 pSize = 2;
+}
+
+message MobileRequest{
+  string mobile = 1;
+}
+
+message IdRequest{
+  int32 Id = 1;
+}
+
+//必须要返回用户的一些信息
+message UserInfoResponse{
+  int32 id = 1;
+  string password = 2;
+  string mobile = 3;
+  string nickname = 4;
+  uint64 birthday = 5;//uint64方便做类型转换
+  string gender = 6;
+  int32 role = 7;
+}
+
+message UserListResponse{
+  int32 total = 1;
+  repeated UserInfoResponse data = 2;
+}

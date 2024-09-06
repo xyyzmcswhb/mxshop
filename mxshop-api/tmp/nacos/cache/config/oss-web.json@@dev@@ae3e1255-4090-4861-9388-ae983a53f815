@@ -1,0 +1,20 @@
+{
+    "name": "oss-web",
+    "host": "127.0.0.1",
+    "tags": ["mxshop","oss","web","hb"],
+    "port": 8029,
+    "oss":{
+        "key": "*",
+        "secret": "*",
+        "host": "https://mxshop-files-huangbiao.oss-cn-shanghai.aliyuncs.com",
+        "callback_url": "https://9489x8u163.zicp.fun/oss/v1/oss/callback",
+        "upload_dir": "user-dir-prefix/"
+    },
+    "jwt": {
+        "key":"IMGq40%fQmUbBFL@"
+    },
+    "consul":{
+        "host":"127.0.0.1",
+        "port":8500
+    }
+}
