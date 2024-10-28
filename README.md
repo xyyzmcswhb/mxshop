@@ -1,4 +1,4 @@
-![bdb3e817_5720251](https://github.com/user-attachments/assets/0ebf757d-9082-4edd-8efd-a2f5a79482b6)![image](https://github.com/user-attachments/assets/cb5c0e95-05cc-4cb2-a576-f90b44c56d97)# mxshop
+# mxshop
 
 #### 介绍
 
@@ -18,9 +18,6 @@ redis,rocketmq中间件，mysql存储，elasticsearch全文搜索。
 
 软件架构说明
 ![bdb3e817_5720251](https://github.com/user-attachments/assets/743ed970-9a8a-4fbd-8e16-3613dda2b276)
-
-
-
 
 #### 安装教程
 
